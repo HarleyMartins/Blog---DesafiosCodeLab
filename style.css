@@ -128,7 +128,7 @@ body{
 }
 
 
-#icon {
+.icon {
     fill: #17171A;
     stroke: #E07B67;
     stroke-width: 7;
@@ -141,8 +141,7 @@ body{
     
   }
   
-  #icon.filled,
-  #icon:hover {
+  .icon.filled{
     fill: #E07B67;
   }
   
