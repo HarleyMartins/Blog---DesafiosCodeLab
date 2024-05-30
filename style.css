@@ -1,0 +1,177 @@
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+
+/* VARIÁVEIS */
+
+:root{
+    --orange: #E07B67;
+    --dark10: #121214;
+    --dark20: #17171A;
+    --dark30: #202024;
+    --dark40: #252529;
+    --dark50: #AFABB6;
+    --dark60: #FFFFFF;
+    --primaryFont: Space Grotesk, sans-serif;
+    --secundaryFont: Inter, sans-serif;
+}
+
+
+header{
+    background-color: var(--dark20);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.1rem;
+    padding: 4rem 0rem;
+}
+
+.header__h1{
+    color: #FFFFFF;
+    font: 600 1.5rem var(--primaryFont);
+}
+
+#h1colorido{
+    color: var(--orange);
+}
+
+.header__search{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    background-color: var(--dark40);
+    width: 56rem;
+    padding: 0rem 0.9rem;
+    border: 2px solid #252529;
+    border-radius: 8px;
+}
+
+.header__search img{
+    width: 2rem;
+    cursor: pointer;
+}
+
+ .h-search__input{
+    font-size: 1rem;
+    width: 56rem;
+    height: 3rem;
+    padding: 0rem 1rem 0rem 0.8rem;
+    background-color: var(--40);
+    outline: none;
+    border: none;
+    color: #FFFFFF;
+
+} 
+
+.h-search__input::placeholder{
+    color: #AFABB6;
+}
+
+main{
+    background-color: #121214;
+    
+
+}
+
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    padding: 5rem 3rem;
+}
+
+.cards__card{
+    color: #FFFFFF;
+    border: 2px solid var(--dark40);
+    border-radius: 8px;
+    padding: 2rem 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1rem;
+    transition: border 1s ease;
+    width: auto;
+}
+
+.cards__card:hover{
+    border: 2px solid var(--orange);
+   
+}
+
+.c-card__top{
+    display: flex;
+    align-items: center;
+    gap: 45rem;
+    
+}
+
+.c-card__span{
+    color: var(--orange);
+    font: 500 1rem var(--secundaryFont);
+}
+
+.c-card__h2{
+    font: 500 1.5rem var(--primaryFont)
+}
+
+.c-card__p{
+    font: 500 1rem var(--secundaryFont);
+    width: 55rem;
+    color: #AFABB6;
+}
+
+
+#icon {
+    fill: #17171A;
+    stroke: #E07B67;
+    stroke-width: 7;
+    transition: fill 0.3s;
+    cursor: pointer;
+    width: 2rem;
+    object-fit:none;
+    width: 1.5rem;
+    
+    
+  }
+  
+  #icon.filled,
+  #icon:hover {
+    fill: #E07B67;
+  }
+  
+
+  @media (min-width: 320px) and (max-width: 1024px){
+    
+    
+    .header__search{
+        width: 30rem;
+    }
+
+    .cards__card{
+        width: 35rem;
+        padding: 1.2rem 2rem;
+    }
+
+    .c-card__top{
+        gap: 20rem;
+    }
+
+    .c-card__span{
+        width: 10rem;
+    }
+
+    .c-card__h2{
+        width: 25rem;
+    }
+
+    .c-card__p{
+        width: 30rem;
+    }
+  }
