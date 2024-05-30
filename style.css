@@ -146,20 +146,48 @@ body{
   }
   
 
-  @media (min-width: 320px) and (max-width: 1024px){
-    
-    
+  @media (min-width: 769px) and (max-width: 1024px){
     .header__search{
-        width: 30rem;
+        width: 40rem;
     }
 
     .cards__card{
+        width: 42rem;
+    }
+
+    .c-card__top{
+        gap: 21rem;
+    }
+
+    .c-card__span{
+        width: 15rem;
+    }
+    .c-card__p{
         width: 35rem;
+    }
+  }
+
+
+  @media (min-width: 320px) and (max-width: 768px){
+    
+    header{
+        width: 100%;
+    }
+
+    .header__search{
+        width: 20rem;
+    }
+    .header__search img{
+        width: 1.5rem;
+    }
+
+    .cards__card{
+        width: 20rem;
         padding: 1.2rem 2rem;
     }
 
     .c-card__top{
-        gap: 20rem;
+        gap: 5rem;
     }
 
     .c-card__span{
@@ -167,10 +195,11 @@ body{
     }
 
     .c-card__h2{
-        width: 25rem;
+        width: 15rem;
+        font-size: 1rem;
     }
 
     .c-card__p{
-        width: 30rem;
+        width: 15rem;
     }
   }
